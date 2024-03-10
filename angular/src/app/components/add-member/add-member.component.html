@@ -1,8 +1,8 @@
 <app-navbar></app-navbar>
 <div class="member-component-body">
-  
-  <form [formGroup]="addMemberForm" class="manage-members-form">
-    
+
+  <form [formGroup]="addMemberForm" class="manage-members-form" (ngSubmit)="addMember()">
+
     <div class="title">
       Add Team Member
     </div>
@@ -10,24 +10,27 @@
     <div class="container">
       <b>Employee ID</b>
       <input formControlName="employee_id" type="number" placeholder="Enter employee id" id="emp-id">
-      <div class="text-danger" id="invalid-id">
-
+      <div class="text-danger" id="invalid-id" *ngIf="addMemberForm.controls['employee_id'].dirty">
         <!--validation message for employee id-->
-
+        <span *ngIf="addMemberForm.controls['employee_id'].errors?.required">{{idRequiredError}}</span>
+        <span *ngIf="addMemberForm.controls['employee_id'].errors?.range">{{idMinMaxError}}</span>
       </div>
 
       <b>Employee name</b>
       <input formControlName="employee_name" type="text" placeholder="Enter employee name" id="emp-name">
-      <div class="text-danger" id="invalid-name">
-
+      <div class="text-danger" id="invalid-name" *ngIf="addMemberForm.controls['employee_name'].dirty">
         <!--validation message for employee name-->
+        <span *ngIf="addMemberForm.controls['employee_name'].errors?.required">{{nameRequiredError}}</span>
+        <span *ngIf="addMemberForm.controls['employee_name'].errors?.pattern">{{namePatternError}}</span>
       </div>
 
       <b>Experience</b>
       <input formControlName="experience" type="number" placeholder="Enter employee experience" id="emp-exp">
-      <div class="text-danger" id="invalid-exp">
+      <div class="text-danger" id="invalid-exp" *ngIf="addMemberForm.controls['experience'].dirty">
 
         <!--validation message for experience name-->
+        <span *ngIf="addMemberForm.controls['experience'].errors?.required">{{experienceRequiredError}}</span>
+        <span *ngIf="addMemberForm.controls['experience'].errors?.minValue">{{experienceMinError}}</span>
 
       </div>
 
@@ -36,7 +39,10 @@
         <span style="width: 75%;float: left;">
           <select class="custom-select" formControlName="technology_name" id="emp-tech">
             <option value="" disabled selected>Select the technology</option>
-            <option><!--iterate the technology or team names which should fetch from backend and display in this drop down options--></option>
+            <option *ngFor="let team of Technologies">
+              <!--iterate the technology or team names which should fetch from backend and display in this drop down options-->
+              {{team.name}}
+            </option>
           </select>
         </span>
         <span>
@@ -47,17 +53,18 @@
         </span>
       </div>
       <br>
-      <div class="text-danger" id="invalid-tech">
+      <div class="text-danger" id="invalid-tech"  *ngIf="addMemberForm.controls['technology_name'].dirty">
 
         <!--valiation message for technology name-->
+        <span *ngIf="addMemberForm.controls['technology_name'].errors?.required">{{technologyNameRequiredError}}</span>
 
       </div>
 
-      <button type="submit" class="btnStyle submitBtn" id="add-btn">
+      <button type="submit" class="btnStyle submitBtn" id="add-btn" [disabled]="addMemberForm.invalid">
         Add member
       </button>
       <!--button should be disabled if form is invalid and click to call 'addMember' function-->
-      <button type="reset" class="btnStyle cancelbtn" id="reset-btn">
+      <button type="reset" class="btnStyle cancelbtn" id="reset-btn" [disabled]="addMemberForm.invalid">
         Reset
       </button>
       <!--button should be disabled if form is invalid and click to reset the form-->
@@ -105,7 +112,9 @@
                 <td>
                   <select class="custom-select" formControlName="removeOption" id="tech-remove">
                     <option value="" disabled selected>Select the technology</option>
-                    <option><!--iterate the technology or team names which should fetch from backend and display in this drop down options--></option>
+                    <option>
+                      <!--iterate the technology or team names which should fetch from backend and display in this drop down options-->
+                    </option>
                   </select>
                 </td>
               </tr>
