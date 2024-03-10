@@ -53,7 +53,7 @@
         </span>
       </div>
       <br>
-      <div class="text-danger" id="invalid-tech"  *ngIf="addMemberForm.controls['technology_name'].dirty">
+      <div class="text-danger" id="invalid-tech" *ngIf="addMemberForm.controls['technology_name'].dirty">
 
         <!--valiation message for technology name-->
         <span *ngIf="addMemberForm.controls['technology_name'].errors?.required">{{technologyNameRequiredError}}</span>
@@ -90,19 +90,21 @@
               <tr>
                 <td>
                   <label class="radio-inline">
-                    <input type="radio" formControlName="addOrRemove" value="add" id="tech-add-radio">
+                    <input type="radio" formControlName="addOrRemove" value="add" id="tech-add-radio"
+                      formControlName="addOrRemove">
                     Add Technology
                   </label>
                 </td>
                 <td>
                   <label class="radio-inline">
-                    <input type="radio" formControlName="addOrRemove" value="remove" id="tech-remove-radio">
+                    <input type="radio" formControlName="addOrRemove" value="remove" id="tech-remove-radio"
+                      formControlName="addOrRemove">
                     Remove Technology
                   </label>
                 </td>
               </tr>
               <!--the input box to enter new technology should display when 'Add Technology' radio is clicked-->
-              <tr>
+              <tr *ngIf="editTechnologyForm.controls['addOrRemove'].value === 'add'">
                 <td>Enter new technology:</td>
                 <td><input type="text" formControlName="newOption" style="margin:0" id="tech-add"></td>
               </tr>
@@ -112,8 +114,9 @@
                 <td>
                   <select class="custom-select" formControlName="removeOption" id="tech-remove">
                     <option value="" disabled selected>Select the technology</option>
-                    <option>
+                    <option *ngFor="let team of Technologies">
                       <!--iterate the technology or team names which should fetch from backend and display in this drop down options-->
+                      {{team.name}}
                     </option>
                   </select>
                 </td>
@@ -121,7 +124,9 @@
             </table>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btnStyle updateBtn" data-dismiss="modal" id="update-btn">
+            <button type="button" class="btnStyle updateBtn" data-dismiss="modal" id="update-btn"
+              (click)="updateDropdown()"
+              [disabled]="(editTechnologyForm.controls['addOrRemove'].value === 'add' && editTechnologyForm.controls['newOption'].value==='') || (editTechnologyForm.controls['addOrRemove'].value === 'remove' && editTechnologyForm.controls['removeOption'].value==='')">
               Update
             </button>
             <!--buttons should be enabled if and only if any one('newOption' and 'removeOption') have value 

@@ -60,7 +60,7 @@ export class AddMemberComponent implements OnInit {
   experienceMinError = "Invalid experience";
   technologyNameRequiredError = "Technology is required";
 
-  constructor(private _formBuilder: FormBuilder, private _service: TrackerRequestsService, private route:Router) { }
+  constructor(private _formBuilder: FormBuilder, private _service: TrackerRequestsService, private route: Router) { }
 
   ngOnInit(): void {
     //configure the form builder for addMemberForm by adding validators
@@ -88,7 +88,7 @@ export class AddMemberComponent implements OnInit {
     //add member in a team by calling the service function -  'addMember'
     //after successful adding of a member, an alert "Team member added successfully" should display
     //or else an alert of error should display 'Member with same name already exists'
-    this._service.addMember(this.addMemberForm.value).subscribe((member) => {
+    this._service.addMember(this.addMemberForm.value).subscribe(() => {
       alert("Team member added successfully");
       this.route.navigate(['/tracker'])
     }, (error) => alert("Member with same name already exists"))
@@ -106,6 +106,20 @@ export class AddMemberComponent implements OnInit {
     //after the successfull adding, an alert 'Team added successfully' should display
     //after the successfull removing, an alert 'Team removed successfully' should display   
     //after updation, it should reflect in the dropdown 
+    if (this.editTechnologyForm.controls['addOrRemove'].value === 'remove') {
+      this._service.removeTeam(this.editTechnologyForm.controls['removeOption'].value).subscribe(() => {
+        alert("Team removed successfully");
+        this.getTeams();
+      }, (error) => alert("unable to remove team"))
+    }
+
+    if (this.editTechnologyForm.controls['addOrRemove'].value === 'add') {
+      this._service.addTeam({ technology_name: this.editTechnologyForm.controls['newOption'].value }).subscribe(() => {
+        alert("Team added successfully");
+        this.getTeams();
+      }, (error) => alert("Team could not be added"))
+    }
+
   }
 
 }
