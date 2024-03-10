@@ -1,0 +1,20 @@
+button.updateBtn {
+  background-color: #4CAF50;
+  width: auto;
+}
+
+button.editBtn {  
+  margin:1px 11px;
+  background-color: darkslategray;
+  width: 20%;
+  border:none;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+button:disabled {
+  opacity: 0.8;
+  cursor: default;
+}
+
+

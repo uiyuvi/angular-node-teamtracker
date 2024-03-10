@@ -1,0 +1,126 @@
+<app-navbar></app-navbar>
+<div class="member-component-body">
+  
+  <form [formGroup]="addMemberForm" class="manage-members-form">
+    
+    <div class="title">
+      Add Team Member
+    </div>
+
+    <div class="container">
+      <b>Employee ID</b>
+      <input formControlName="employee_id" type="number" placeholder="Enter employee id" id="emp-id">
+      <div class="text-danger" id="invalid-id">
+
+        <!--validation message for employee id-->
+
+      </div>
+
+      <b>Employee name</b>
+      <input formControlName="employee_name" type="text" placeholder="Enter employee name" id="emp-name">
+      <div class="text-danger" id="invalid-name">
+
+        <!--validation message for employee name-->
+      </div>
+
+      <b>Experience</b>
+      <input formControlName="experience" type="number" placeholder="Enter employee experience" id="emp-exp">
+      <div class="text-danger" id="invalid-exp">
+
+        <!--validation message for experience name-->
+
+      </div>
+
+      <b>Technology</b>
+      <div>
+        <span style="width: 75%;float: left;">
+          <select class="custom-select" formControlName="technology_name" id="emp-tech">
+            <option value="" disabled selected>Select the technology</option>
+            <option><!--iterate the technology or team names which should fetch from backend and display in this drop down options--></option>
+          </select>
+        </span>
+        <span>
+          <button class="editBtn" data-toggle="modal" data-target="#dropdown-edit" id="edit-btn">
+            Add/Remove
+          </button>
+          <!--click this button will open a bootstrap modal to add or remove technology names in drop down-->
+        </span>
+      </div>
+      <br>
+      <div class="text-danger" id="invalid-tech">
+
+        <!--valiation message for technology name-->
+
+      </div>
+
+      <button type="submit" class="btnStyle submitBtn" id="add-btn">
+        Add member
+      </button>
+      <!--button should be disabled if form is invalid and click to call 'addMember' function-->
+      <button type="reset" class="btnStyle cancelbtn" id="reset-btn">
+        Reset
+      </button>
+      <!--button should be disabled if form is invalid and click to reset the form-->
+
+    </div>
+  </form>
+</div>
+
+<!------------Starts----------Modal for adding options to dropdown--------------------------------------->
+<div class="container">
+  <!-- Modal -->
+  <div class="modal fade" id="dropdown-edit" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <form [formGroup]="editTechnologyForm">
+          <div class="modal-header">
+            <h4 class="modal-title">Update technology</h4>
+            <button type="button" class="close" data-dismiss="modal" id="close-btn">&times;</button>
+          </div>
+          <div class="modal-body">
+            <table>
+              <tr>
+                <td>
+                  <label class="radio-inline">
+                    <input type="radio" formControlName="addOrRemove" value="add" id="tech-add-radio">
+                    Add Technology
+                  </label>
+                </td>
+                <td>
+                  <label class="radio-inline">
+                    <input type="radio" formControlName="addOrRemove" value="remove" id="tech-remove-radio">
+                    Remove Technology
+                  </label>
+                </td>
+              </tr>
+              <!--the input box to enter new technology should display when 'Add Technology' radio is clicked-->
+              <tr>
+                <td>Enter new technology:</td>
+                <td><input type="text" formControlName="newOption" style="margin:0" id="tech-add"></td>
+              </tr>
+              <!--the select input to choose the existing technology to remove should display when 'Remove Technology' radio is clicked-->
+              <tr>
+                <td>Choose the technology:</td>
+                <td>
+                  <select class="custom-select" formControlName="removeOption" id="tech-remove">
+                    <option value="" disabled selected>Select the technology</option>
+                    <option><!--iterate the technology or team names which should fetch from backend and display in this drop down options--></option>
+                  </select>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btnStyle updateBtn" data-dismiss="modal" id="update-btn">
+              Update
+            </button>
+            <!--buttons should be enabled if and only if any one('newOption' and 'removeOption') have value 
+            and click to call 'updateDropdown' function-->
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<!-------------Ends-----------Modal for adding options to dropdown--------------------------------------->

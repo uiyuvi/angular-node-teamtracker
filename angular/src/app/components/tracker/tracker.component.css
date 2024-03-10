@@ -1,0 +1,53 @@
+div.body {
+  margin-top:70px;
+  padding: 0;
+}
+
+.request-title {
+  width:25%;  
+  font-size: larger;
+  font-weight: bold;
+  font-family: 'Lucida Sans';
+}
+
+.radio-text {
+  margin: 5px;
+}
+
+.team-num {
+  margin:10px;
+  font-weight: bolder;
+  font-size: large;
+  color: green;
+}
+
+button:disabled {
+  opacity: 0.8;
+  cursor: auto;
+}
+
+/* loader */
+
+.myloader {
+  position: fixed;
+  left: 600px;
+  top: 300px;
+  z-index: 9999;
+  border: 8px solid #245331;
+  border-radius: 50%;
+  border-top: 8px solid #68f127;
+  align-self: center;
+  width: 70px;
+  height: 70px;
+  -webkit-animation: spin 2.5s linear infinite; /* Safari */
+  animation: spin 2.5s linear infinite;
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+/* for Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}

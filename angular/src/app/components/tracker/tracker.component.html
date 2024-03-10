@@ -1,0 +1,29 @@
+<app-navbar></app-navbar>
+<div class="myloader" *ngIf="loader" id="app-loader"></div>
+<div class="container body">
+  <h2>Tracker</h2>
+  <span class="request-title">
+    Employee details of all teams
+  </span>
+  <br><br>
+  <table class="table table-striped" style="width: 100%;">
+    <thead>
+      <tr>
+        <th>Employee ID</th>
+        <th>Employee name</th>
+        <th>Experience</th>        
+      </tr>
+    </thead>    
+    <!--display the members by grouping them with team names-->
+    <tbody id="tracker-data">
+      <div class="team-num">
+        <!--display 'Team {team name}'-->
+      </div>
+      <tr>
+        <td><!--{member's employee_id}--></td>
+        <td><!--{member's employee_name}--></td>
+        <td><!--{member's experience}--></td>        
+      </tr>
+    </tbody>
+  </table>
+</div>
