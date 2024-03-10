@@ -11,9 +11,10 @@ import { TrackerRequestsService } from 'src/app/service/tracker-requests.service
 export class TrackerComponent implements OnInit {
 
   Technologies = [];
-  seperateTeam: any[];
+  members = [];
+  seperateTeam: any[] = [];
 
-  editMemberForm: FormGroup;  
+  editMemberForm: FormGroup;
   loader: boolean;
 
   constructor(private _service: TrackerRequestsService, private _formBuilder: FormBuilder) { }
@@ -26,16 +27,29 @@ export class TrackerComponent implements OnInit {
       employee_id: [''],
       employee_name: [''],
       experience: [''],
-    });    
+    });
     // get tracker data from service
+    this.getTeams();
+    this.getAllMembers();
   }
 
   getTeams() {
     //get team names from service and store in array to display in dropdown
+    this._service.getTeams().subscribe((teams) => this.Technologies = teams)
   }
 
   getAllMembers() {
     //get details of team members to display in tracker by calling service function - 'getMembers'
+    this._service.getMembers().subscribe((members) => {
+      this.members = members;
+      this.Technologies.forEach(team => {
+        this.seperateTeam[team.name] = [];
+      });
+      members.forEach(member => {
+        const teamName = member.technology_name;
+        this.seperateTeam[teamName].push(member);
+      });
+    })
   }
 
 }

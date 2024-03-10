@@ -11,19 +11,22 @@
       <tr>
         <th>Employee ID</th>
         <th>Employee name</th>
-        <th>Experience</th>        
+        <th>Experience</th>
       </tr>
-    </thead>    
+    </thead>
     <!--display the members by grouping them with team names-->
-    <tbody id="tracker-data">
-      <div class="team-num">
-        <!--display 'Team {team name}'-->
-      </div>
-      <tr>
-        <td><!--{member's employee_id}--></td>
-        <td><!--{member's employee_name}--></td>
-        <td><!--{member's experience}--></td>        
-      </tr>
-    </tbody>
+    <ng-container *ngFor="let team of Technologies">
+      <tbody id="tracker-data" *ngIf="seperateTeam[team.name]?.length > 0">
+        <div class="team-num">
+          <!--display 'Team {team name}'-->
+          Team {{team.name}}
+        </div>
+        <tr *ngFor="let member of seperateTeam[team.name]">
+          <td><!--{member's employee_id}-->{{member.employee_id}}</td>
+          <td><!--{member's employee_name}-->{{member.employee_name}}</td>
+          <td><!--{member's experience}-->{{member.experience}}</td>
+        </tr>
+      </tbody>
+    </ng-container>
   </table>
 </div>
