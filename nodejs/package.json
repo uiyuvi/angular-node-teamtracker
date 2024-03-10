@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node_modules/.bin/pm2 kill;pm2 start src/index.js --watch",
     "test": "jest --forceExit"
-  }, 
+  },
   "jest": {
     "testResultsProcessor": "./node_modules/jest-junit-reporter"
   },

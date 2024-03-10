@@ -1,0 +1,466 @@
+<?xml version="1.0"?>
+<testsuite name="Chrome 122.0.0.0 (Windows 10)" package="unit" timestamp="2024-03-10T17:57:09" id="0" hostname="Yuva" tests="21" errors="0" failures="21" time="2.493">
+  <properties>
+    <property name="browser.fullName" value="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"/>
+  </properties>
+  <testcase name="AddMemberComponent #should display initial UI" time="0.44" classname=".AddMemberComponent">
+    <failure type="">Error: Expected '' to equal 'Angular'.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/components/add-member/add-member.component.spec.ts:192:38)
+    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
+    at ProxyZoneSpec.push.QpwO.ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:292:1)
+</failure>
+    <failure type="">TypeError: Cannot read properties of undefined (reading 'value')
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/components/add-member/add-member.component.spec.ts:193:31)
+    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
+    at ProxyZoneSpec.push.QpwO.ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:292:1)
+    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:363:1)
+    at Zone.run (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:123:1)
+    at runInTestZone (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:545:1)
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:560:1)
+    at &lt;Jasmine&gt;
+</failure>
+  </testcase>
+  <testcase name="AddMemberComponent #ID validation error" time="0.302" classname=".AddMemberComponent">
+    <failure type="">Error: Expected '' to be 'ID is required'.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/components/add-member/add-member.component.spec.ts:208:38)
+    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
+    at ProxyZoneSpec.push.QpwO.ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:292:1)
+</failure>
+    <failure type="">Error: Expected '' to be 'The employee ID range should be between 10000 and 300000'.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/components/add-member/add-member.component.spec.ts:211:38)
+    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
+    at ProxyZoneSpec.push.QpwO.ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:292:1)
+</failure>
+    <failure type="">Error: Expected '' to be 'The employee ID range should be between 10000 and 300000'.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/components/add-member/add-member.component.spec.ts:214:38)
+    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
+    at ProxyZoneSpec.push.QpwO.ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:292:1)
+</failure>
+  </testcase>
+  <testcase name="AddMemberComponent #Name validation error" time="0.027" classname=".AddMemberComponent">
+    <failure type="">Error: Expected '' to be 'Name is required'.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/components/add-member/add-member.component.spec.ts:221:40)
+    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
+    at ProxyZoneSpec.push.QpwO.ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:292:1)
+</failure>
+    <failure type="">Error: Expected '' to be 'Invalid name'.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/components/add-member/add-member.component.spec.ts:224:40)
+    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
+    at ProxyZoneSpec.push.QpwO.ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:292:1)
+</failure>
+    <failure type="">Error: Expected '' to be 'Invalid name'.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/components/add-member/add-member.component.spec.ts:227:40)
+    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
+    at ProxyZoneSpec.push.QpwO.ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:292:1)
+</failure>
+  </testcase>
+  <testcase name="AddMemberComponent #Experience validation error" time="0.057" classname=".AddMemberComponent">
+    <failure type="">Error: Expected '' to be 'Experience is required'.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/components/add-member/add-member.component.spec.ts:234:39)
+    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
+    at ProxyZoneSpec.push.QpwO.ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:292:1)
+</failure>
+    <failure type="">Error: Expected '' to be 'Invalid experience'.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/components/add-member/add-member.component.spec.ts:237:39)
+    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
+    at ProxyZoneSpec.push.QpwO.ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:292:1)
+</failure>
+  </testcase>
+  <testcase name="AddMemberComponent #Technology validation error" time="0.043" classname=".AddMemberComponent">
+    <failure type="">Error: Expected '' to be 'Technology is required'.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/components/add-member/add-member.component.spec.ts:244:40)
+    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
+    at ProxyZoneSpec.push.QpwO.ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:292:1)
+</failure>
+  </testcase>
+  <testcase name="AddMemberComponent #addMemberForm - invalid and valid form" time="0.046" classname=".AddMemberComponent">
+    <failure type="">Error: Expected false to be true.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/components/add-member/add-member.component.spec.ts:253:45)
+    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
+    at ProxyZoneSpec.push.QpwO.ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:292:1)
+</failure>
+    <failure type="">Error: Expected false to be true.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/components/add-member/add-member.component.spec.ts:254:29)
+    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
+    at ProxyZoneSpec.push.QpwO.ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:292:1)
+</failure>
+    <failure type="">Error: Expected false to be true.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/components/add-member/add-member.component.spec.ts:261:45)
+    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
+    at ProxyZoneSpec.push.QpwO.ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:292:1)
+</failure>
+    <failure type="">Error: Expected false to be true.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/components/add-member/add-member.component.spec.ts:262:29)
+    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
+    at ProxyZoneSpec.push.QpwO.ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:292:1)
+</failure>
+  </testcase>
+  <testcase name="AddMemberComponent #addMemberForm - add member" time="0.085" classname=".AddMemberComponent">
+    <failure type="">Error: Expected spy addMember to have been called.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/components/add-member/add-member.component.spec.ts:284:33)
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:1749:1)
+    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
+</failure>
+    <failure type="">Expected spy addMember to have been called with:
+  [ Object({ employee_id: 123454, employee_name: 'employee three', experience: 2, technology_name: 'Angular' }) ]
+but it was never called.
+Error: Expected spy addMember to have been called with:
+  [ Object({ employee_id: 123454, employee_name: 'employee three', experience: 2, technology_name: 'Angular' }) ]
+but it was never called.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/components/add-member/add-member.component.spec.ts:285:31)
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:1749:1)
+    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
+</failure>
+    <failure type="">Expected spy alert to have been called with:
+  [ 'Team member added successfully' ]
+but it was never called.
+Error: Expected spy alert to have been called with:
+  [ 'Team member added successfully' ]
+but it was never called.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/components/add-member/add-member.component.spec.ts:286:22)
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:1749:1)
+    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
+</failure>
+    <failure type="">Error: Expected '' to be '/tracker'.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/components/add-member/add-member.component.spec.ts:287:27)
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:1749:1)
+    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
+</failure>
+  </testcase>
+  <testcase name="AddMemberComponent - ErrorResponse #addMemberForm - add member already exists error response" time="0.038" classname=".AddMemberComponent - ErrorResponse">
+    <failure type="">Error: Expected spy addMember to have been called.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/components/add-member/add-member.component.spec.ts:363:33)
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:1749:1)
+    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
+</failure>
+    <failure type="">Expected spy addMember to have been called with:
+  [ Object({ employee_id: 123454, employee_name: 'employee three', experience: 2, technology_name: 'Angular' }) ]
+but it was never called.
+Error: Expected spy addMember to have been called with:
+  [ Object({ employee_id: 123454, employee_name: 'employee three', experience: 2, technology_name: 'Angular' }) ]
+but it was never called.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/components/add-member/add-member.component.spec.ts:364:31)
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:1749:1)
+    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
+</failure>
+    <failure type="">Expected spy alert to have been called with:
+  [ 'Member with same name already exists' ]
+but it was never called.
+Error: Expected spy alert to have been called with:
+  [ 'Member with same name already exists' ]
+but it was never called.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/components/add-member/add-member.component.spec.ts:365:22)
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:1749:1)
+    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
+</failure>
+  </testcase>
+  <testcase name="AddMemberComponent - editTechnologyForm #initial UI for edit dropdown" time="0.03" classname=".AddMemberComponent - editTechnologyForm">
+    <failure type="">Error: Expected '' to equal 'Data science'.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/components/add-member/add-member.component.spec.ts:475:38)
+    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
+    at ProxyZoneSpec.push.QpwO.ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:292:1)
+</failure>
+    <failure type="">TypeError: Cannot read properties of undefined (reading 'value')
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/components/add-member/add-member.component.spec.ts:476:31)
+    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
+    at ProxyZoneSpec.push.QpwO.ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:292:1)
+    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:363:1)
+    at Zone.run (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:123:1)
+    at runInTestZone (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:545:1)
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:560:1)
+    at &lt;Jasmine&gt;
+</failure>
+  </testcase>
+  <testcase name="AddMemberComponent - editTechnologyForm #add team to dropdown" time="0.044" classname=".AddMemberComponent - editTechnologyForm">
+    <failure type="">Error: Expected spy updateDropdown to have been called.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/components/add-member/add-member.component.spec.ts:494:38)
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:1749:1)
+    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
+</failure>
+    <failure type="">Expected spy addTeam to have been called with:
+  [ Object({ technology_name: 'Angular' }) ]
+but it was never called.
+Error: Expected spy addTeam to have been called with:
+  [ Object({ technology_name: 'Angular' }) ]
+but it was never called.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/components/add-member/add-member.component.spec.ts:495:29)
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:1749:1)
+    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
+</failure>
+    <failure type="">Expected spy alert to have been called with:
+  [ 'Team added successfully' ]
+but it was never called.
+Error: Expected spy alert to have been called with:
+  [ 'Team added successfully' ]
+but it was never called.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/components/add-member/add-member.component.spec.ts:496:22)
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:1749:1)
+    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
+</failure>
+    <failure type="">Error: Expected spy getTeams to have been called.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/components/add-member/add-member.component.spec.ts:497:30)
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:1749:1)
+    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
+</failure>
+  </testcase>
+  <testcase name="AddMemberComponent - editTechnologyForm #remove team from dropdown" time="0.045" classname=".AddMemberComponent - editTechnologyForm">
+    <failure type="">TypeError: Cannot read properties of undefined (reading 'value')
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/components/add-member/add-member.component.spec.ts:509:44)
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:1749:1)
+    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
+    at ProxyZoneSpec.push.QpwO.ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:292:1)
+    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:363:1)
+    at Zone.run (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:123:1)
+    at runInTestZone (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:545:1)
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:560:1)
+    at &lt;Jasmine&gt;
+</failure>
+  </testcase>
+  <testcase name="NavbarComponent #home link" time="0.568" classname=".NavbarComponent">
+    <failure type="">Error: Expected '' to be '/tracker'.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/components/navbar/navbar.component.spec.ts:34:27)
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:1749:1)
+    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
+</failure>
+  </testcase>
+  <testcase name="NavbarComponent #add team member link" time="0.156" classname=".NavbarComponent">
+    <failure type="">Error: Expected '' to be '/addMember'.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/components/navbar/navbar.component.spec.ts:42:27)
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:1749:1)
+    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
+</failure>
+  </testcase>
+  <testcase name="TrackerComponent #tracker - should display initial UI" time="0.259" classname=".TrackerComponent">
+    <failure type="">Error: Expected spy getMembers to have been called.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/components/tracker/tracker.component.spec.ts:52:32)
+    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
+    at ProxyZoneSpec.push.QpwO.ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:292:1)
+</failure>
+    <failure type="">Error: Expected '' to be 'Team Angular'.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/components/tracker/tracker.component.spec.ts:55:41)
+    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
+    at ProxyZoneSpec.push.QpwO.ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:292:1)
+</failure>
+    <failure type="">Error: Expected '' to be '123456'.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/components/tracker/tracker.component.spec.ts:58:46)
+    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
+    at ProxyZoneSpec.push.QpwO.ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:292:1)
+</failure>
+    <failure type="">Error: Expected '' to be 'employee one'.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/components/tracker/tracker.component.spec.ts:59:46)
+    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
+    at ProxyZoneSpec.push.QpwO.ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:292:1)
+</failure>
+    <failure type="">Error: Expected '' to be '1'.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/components/tracker/tracker.component.spec.ts:60:46)
+    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
+    at ProxyZoneSpec.push.QpwO.ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:292:1)
+</failure>
+    <failure type="">TypeError: Cannot read properties of undefined (reading 'querySelectorAll')
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/components/tracker/tracker.component.spec.ts:61:70)
+    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
+    at ProxyZoneSpec.push.QpwO.ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:292:1)
+    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:363:1)
+    at Zone.run (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:123:1)
+    at runInTestZone (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:545:1)
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:560:1)
+    at &lt;Jasmine&gt;
+</failure>
+  </testcase>
+  <testcase name="TrackerComponent - Alternate values #tracker - should display initial UI" time="0.157" classname=".TrackerComponent - Alternate values">
+    <failure type="">Error: Expected spy getMembers to have been called.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/components/tracker/tracker.component.spec.ts:115:32)
+    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
+    at ProxyZoneSpec.push.QpwO.ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:292:1)
+</failure>
+    <failure type="">Error: Expected '' to be 'Team Data science'.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/components/tracker/tracker.component.spec.ts:118:41)
+    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
+    at ProxyZoneSpec.push.QpwO.ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:292:1)
+</failure>
+    <failure type="">Error: Expected '' to be '234561'.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/components/tracker/tracker.component.spec.ts:121:46)
+    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
+    at ProxyZoneSpec.push.QpwO.ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:292:1)
+</failure>
+    <failure type="">Error: Expected '' to be 'employee one'.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/components/tracker/tracker.component.spec.ts:122:46)
+    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
+    at ProxyZoneSpec.push.QpwO.ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:292:1)
+</failure>
+    <failure type="">Error: Expected '' to be '1'.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/components/tracker/tracker.component.spec.ts:123:46)
+    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
+    at ProxyZoneSpec.push.QpwO.ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:292:1)
+</failure>
+    <failure type="">TypeError: Cannot read properties of undefined (reading 'querySelector')
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/components/tracker/tracker.component.spec.ts:126:48)
+    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
+    at ProxyZoneSpec.push.QpwO.ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:292:1)
+    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:363:1)
+    at Zone.run (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:123:1)
+    at runInTestZone (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:545:1)
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:560:1)
+    at &lt;Jasmine&gt;
+</failure>
+  </testcase>
+  <testcase name="TrackerComponent - Testing app loader #tracker - should display initial UI" time="0.006" classname=".TrackerComponent - Testing app loader">
+    <failure type="">Error: Expected spy getTeams to have been called.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/components/tracker/tracker.component.spec.ts:172:30)
+    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
+    at ProxyZoneSpec.push.QpwO.ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:292:1)
+</failure>
+    <failure type="">Error: Expected spy getMembers to have been called.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/components/tracker/tracker.component.spec.ts:173:32)
+    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
+    at ProxyZoneSpec.push.QpwO.ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:292:1)
+</failure>
+  </testcase>
+  <testcase name="TrackerRequestsService #addTeam API request" time="0.01" classname=".TrackerRequestsService">
+    <failure type="">TypeError: Cannot read properties of undefined (reading 'subscribe')
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/service/tracker-requests.service.spec.ts:46:30)
+    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
+    at ProxyZoneSpec.push.QpwO.ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:292:1)
+    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:363:1)
+    at Zone.run (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:123:1)
+    at runInTestZone (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:545:1)
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:560:1)
+    at &lt;Jasmine&gt;
+</failure>
+  </testcase>
+  <testcase name="TrackerRequestsService #getTeams API request" time="0.171" classname=".TrackerRequestsService">
+    <failure type="">TypeError: Cannot read properties of undefined (reading 'subscribe')
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/service/tracker-requests.service.spec.ts:56:23)
+    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
+    at ProxyZoneSpec.push.QpwO.ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:292:1)
+    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:363:1)
+    at Zone.run (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:123:1)
+    at runInTestZone (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:545:1)
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:560:1)
+    at &lt;Jasmine&gt;
+</failure>
+  </testcase>
+  <testcase name="TrackerRequestsService #removeTeam API request" time="0.002" classname=".TrackerRequestsService">
+    <failure type="">TypeError: Cannot read properties of undefined (reading 'subscribe')
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/service/tracker-requests.service.spec.ts:66:33)
+    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
+    at ProxyZoneSpec.push.QpwO.ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:292:1)
+    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:363:1)
+    at Zone.run (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:123:1)
+    at runInTestZone (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:545:1)
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:560:1)
+    at &lt;Jasmine&gt;
+</failure>
+  </testcase>
+  <testcase name="TrackerRequestsService #addMember API request" time="0.004" classname=".TrackerRequestsService">
+    <failure type="">TypeError: Cannot read properties of undefined (reading 'subscribe')
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/service/tracker-requests.service.spec.ts:75:38)
+    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
+    at ProxyZoneSpec.push.QpwO.ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:292:1)
+    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:363:1)
+    at Zone.run (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:123:1)
+    at runInTestZone (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:545:1)
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:560:1)
+    at &lt;Jasmine&gt;
+</failure>
+  </testcase>
+  <testcase name="TrackerRequestsService #getMembers API request" time="0.003" classname=".TrackerRequestsService">
+    <failure type="">TypeError: Cannot read properties of undefined (reading 'subscribe')
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/service/tracker-requests.service.spec.ts:85:25)
+    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
+    at ProxyZoneSpec.push.QpwO.ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:292:1)
+    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:363:1)
+    at Zone.run (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:123:1)
+    at runInTestZone (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:545:1)
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:560:1)
+    at &lt;Jasmine&gt;
+</failure>
+  </testcase>
+  <system-out>
+    <![CDATA[Chrome 122.0.0.0 (Windows 10) ERROR: ''app-navbar' is not a known element:
+1. If 'app-navbar' is an Angular component, then verify that it is part of this module.
+2. If 'app-navbar' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 122.0.0.0 (Windows 10) ERROR: ''app-navbar' is not a known element:
+1. If 'app-navbar' is an Angular component, then verify that it is part of this module.
+2. If 'app-navbar' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 122.0.0.0 (Windows 10) ERROR: ''app-navbar' is not a known element:
+1. If 'app-navbar' is an Angular component, then verify that it is part of this module.
+2. If 'app-navbar' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 122.0.0.0 (Windows 10) ERROR: ''app-navbar' is not a known element:
+1. If 'app-navbar' is an Angular component, then verify that it is part of this module.
+2. If 'app-navbar' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 122.0.0.0 (Windows 10) ERROR: ''app-navbar' is not a known element:
+1. If 'app-navbar' is an Angular component, then verify that it is part of this module.
+2. If 'app-navbar' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 122.0.0.0 (Windows 10) ERROR: ''app-navbar' is not a known element:
+1. If 'app-navbar' is an Angular component, then verify that it is part of this module.
+2. If 'app-navbar' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 122.0.0.0 (Windows 10) ERROR: ''app-navbar' is not a known element:
+1. If 'app-navbar' is an Angular component, then verify that it is part of this module.
+2. If 'app-navbar' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 122.0.0.0 (Windows 10) ERROR: ''app-navbar' is not a known element:
+1. If 'app-navbar' is an Angular component, then verify that it is part of this module.
+2. If 'app-navbar' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 122.0.0.0 (Windows 10) ERROR: ''app-navbar' is not a known element:
+1. If 'app-navbar' is an Angular component, then verify that it is part of this module.
+2. If 'app-navbar' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 122.0.0.0 (Windows 10) ERROR: ''app-navbar' is not a known element:
+1. If 'app-navbar' is an Angular component, then verify that it is part of this module.
+2. If 'app-navbar' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 122.0.0.0 (Windows 10) ERROR: ''app-navbar' is not a known element:
+1. If 'app-navbar' is an Angular component, then verify that it is part of this module.
+2. If 'app-navbar' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 122.0.0.0 (Windows 10) ERROR: ''app-navbar' is not a known element:
+1. If 'app-navbar' is an Angular component, then verify that it is part of this module.
+2. If 'app-navbar' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 122.0.0.0 (Windows 10) ERROR: ''app-navbar' is not a known element:
+1. If 'app-navbar' is an Angular component, then verify that it is part of this module.
+2. If 'app-navbar' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 122.0.0.0 (Windows 10) ERROR: ''app-navbar' is not a known element:
+1. If 'app-navbar' is an Angular component, then verify that it is part of this module.
+2. If 'app-navbar' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+
+]]>
+  </system-out>
+  <system-err/>
+</testsuite>
