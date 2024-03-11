@@ -46,7 +46,7 @@
           </select>
         </span>
         <span>
-          <button class="editBtn" data-toggle="modal" data-target="#dropdown-edit" id="edit-btn">
+          <button type="button" class="editBtn" data-toggle="modal" data-target="#dropdown-edit" id="edit-btn">
             Add/Remove
           </button>
           <!--click this button will open a bootstrap modal to add or remove technology names in drop down-->
@@ -109,7 +109,7 @@
                 <td><input type="text" formControlName="newOption" style="margin:0" id="tech-add"></td>
               </tr>
               <!--the select input to choose the existing technology to remove should display when 'Remove Technology' radio is clicked-->
-              <tr>
+              <tr *ngIf="editTechnologyForm.controls['addOrRemove'].value === 'remove'">
                 <td>Choose the technology:</td>
                 <td>
                   <select class="custom-select" formControlName="removeOption" id="tech-remove">
