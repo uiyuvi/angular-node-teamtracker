@@ -65,7 +65,7 @@ export class AddMemberComponent implements OnInit {
   ngOnInit(): void {
     //configure the form builder for addMemberForm by adding validators
     this.addMemberForm = this._formBuilder.group({
-      employee_id: ['', Validators.required, asyncRangeValidator(10000, 300000)],
+      employee_id: ['', Validators.required, asyncRangeValidator(100000, 300000)],
       employee_name: ['',
         [
           Validators.required,
