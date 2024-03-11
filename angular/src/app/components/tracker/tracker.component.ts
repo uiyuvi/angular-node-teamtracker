@@ -47,7 +47,9 @@ export class TrackerComponent implements OnInit {
       });
       members.forEach(member => {
         const teamName = member.technology_name;
-        this.seperateTeam[teamName].push(member);
+        if (this.seperateTeam[teamName]) {
+          this.seperateTeam[teamName].push(member);
+        }
       });
     })
   }
