@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node_modules/.bin/pm2 kill;pm2 start src/index.js --watch",
-    "test": "jest --forceExit"
+    "start": "cross-env node_modules/.bin/pm2 -f start src/index.js --watch",
+    "test": "jest --forceExit",
+    "stop": "cross-env node_modules/.bin/pm2 kill"
   },
   "jest": {
     "testResultsProcessor": "./node_modules/jest-junit-reporter"
@@ -21,5 +22,8 @@
     "mongoose": "^5.10.9",
     "pm2": "^4.5.0",
     "supertest": "^5.0.0"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3"
   }
 }
